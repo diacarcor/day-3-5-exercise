@@ -22,9 +22,9 @@ score = digit_one * 10 + digit_two
 #Check compatibility
 message = f"Your score is {score}"
 
-if score < 10 or score > 90:
+if (score < 10) or (score > 90):
   message = message + ", you go together like coke and mentos."
-elif score > 40 and score < 50:
+elif (score >= 40) and (score <= 50):
   message = message + ", you are alright together."
 else:
   message = message + "."
